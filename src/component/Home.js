@@ -1,84 +1,124 @@
 import React from "react";
 import "./home.css";
-import GoogleIcon from '@mui/icons-material/Google';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GroupsIcon from "@mui/icons-material/Groups";
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
 const home = () => {
   return (
-    <div className="maincontainer">
-      <div className="container1">
-        <h1>GANGA CONFECTIONERIES PVT. LTD.</h1>
-        <img
-          src="https://previews.123rf.com/images/espies/espies1710/espies171000019/87182063-stock-photo-of-indian-sweets-served-in-silver-or-wooden-plate-variety-of-peda-burfi-laddu-in-decorat.jpg"
-          alt="sweet"
-        />
-        <p>
-          Ganga Confectioner is listed under Sweet SHops in Rajendra Nagar Sector 5, Sahibabad Delhi, Check Address, Contack Number, Ratings & Reviews, Photos, Maps etc, on Justdial.
-          Cakes are pretty much the highlight of all events in our lives. Any celebration, whether a birthday, an anniversary, or an accomplishment, is incomplete without a delicious cake. A cake can be defined as an ideal incomplete without a delicious cake. A cake can be defined as an ideal sweet dish when it jsut melts in your mouth and hsa the most distinctive flavour with the perfect filling and texture. All our sweet cravings can be satisfied at the cake in Sahibabad, Delhi, where you would never be disappointed with the availability of a variety of scrumptious cakes and bekery items.
-          From cakes to brownies, and cupcakes to macarons, cake shops in Sahibabad, Delhi are your go-to-hotspot for treating your sweet tooth. 
-        </p>
-        <p className="boldpara">
-          Share your opinion in 30 minutes interview and win Cash Rewards
-        </p>
+    <div className="container">
+      <div className="navbar">
+        <div className="navbarheading">
+          <AutoStoriesOutlinedIcon />
+          <h3>TuteDude</h3>
+        </div>
+
+        <div className="rightnavbar">
+          <h3>My Assignment</h3>
+          <h3>Chat with Mentor</h3>
+          <div className="profile">
+            <AccountCircleIcon />
+            <h3>ProfileName</h3>
+          </div>
+        </div>
       </div>
+      <div className="mainbody">
+        <p>UI/UX > Refer & Earn</p>
+        <div className="mainbodyitem1">
+          <div className="Earning">
+            <div className="earningitem1">
+              <div className="earningitem2">
+                <p>Referrel Earning</p>
+                <h1>₹ 2,500</h1>
+              </div>
+              <div className="earningitem2">
+                <p>Total Referrals</p>
+                <h1>7</h1>
+              </div>
+              <div className="earningitem2">
+                <p>Wallet Balance</p>
+                <h1>₹ 500</h1>
+              </div>
+            </div>
+            <button>Withdraw Balance</button>
+          </div>
 
-      <div className="container2">
-        <h1>RSVP NOW</h1>
-        <p>
-          Given the focus of this panel, why do you think you are uniquely positioned to provide valuable point? please be specific about your relavent expertise and the perspective that you represent.
-        </p>
-        <div className="up">
-          <div className="labels1">
-            <label>Enter your name</label>
-            <input type="text" />
-          </div>
-          <div className="labels1">
-            <label>Enter your E-mail</label>
-            <input type="text" />
+          <div className="referrelcode">
+            <h3>Your Referrel Code</h3>
+            <div className="referrelitem">
+              <div className="referrelcodeitem">
+                <p>E</p>
+                <p>D</p>
+                <p>C</p>
+                <p>H</p>
+                <p>5</p>
+                <p>4</p>
+              </div>
+            </div>
           </div>
         </div>
+        <h2>How does it work ?</h2>
+        <div className="bottombody">
+          <div className="bottonbodyitem">
+            <div className="bottonbodyitemsvg">
+              <GroupsIcon />
+            </div>
+            <div className="bottonbodyitemdata">
+              <h3>Invite your friends</h3>
+              <p>Share the link tutedude.com with your friends</p>
+            </div>
+          </div>
+          <div className="bottonbodyitem">
+            <div className="bottonbodyitemsvg">
+              <LocalOfferIcon />
+            </div>
 
-        <div className="down">
-          <div className="labels1">
-            <label>Your Answer</label>
-            <input type="text" />
+            <div className="bottonbodyitemdata">
+              <h3>Friend purchase any course</h3>
+              <p>Using your referrelcode in the payment page</p>
+            </div>
           </div>
-          <div className="labels1">
-            <label>Conflict of Interest</label>
-            <input type="text" />
-          </div>
-        </div>
-        <div className="check">
-          <input type="checkbox" />
-          <label >
-            ** Click here if you are an independent facilitor and would be
-            interested in facilitating this knowledgeStream
-          </label>
-        </div>
+          <div className="bottonbodyitem">
+            <div className="bottonbodyitemsvg">
+              <CurrencyRupeeIcon />
+            </div>
 
-        <div className="buttonsitem">
-          <button>SELECT SLOT</button>
-          <button>SUBMIT</button>
-        </div>
+            <div className="bottonbodyitemdata">
+              <h3>You get 200 as referal money</h3>
+              <p>On total purchase the friend makes, into your wallet</p>
+            </div>
+          </div>
+          <div className="bottonbodyitem">
+            <div className="bottonbodyitemsvg">
+              <AccountBalanceWalletIcon />
+            </div>
 
-        <div className="socialmediabuttons">
-          <div className="googlebutton">
-            <GoogleIcon/>
-            <p>Continue with Google</p>
+            <div className="bottonbodyitemdata">
+              <h3>Transfer money from wallet</h3>
+              <p>
+                When the wallet balance reaches 200 or more,you can withdraw it
+              </p>
+            </div>
           </div>
-          <div className="linkedinbutton">
-            <LinkedInIcon/>
-            <p>Continue with Linkedin</p>
+          <div className="bottonbodyitem">
+            <div className="bottonbodyitemsvg">
+              <GroupsIcon />
+            </div>
+
+            <div className="bottonbodyitemdata">
+              <h3>Your friend get 200 off</h3>
+              <p>
+                On his overall fee on successfull purchase using your referrel
+                code
+              </p>
+            </div>
           </div>
         </div>
-        <p>
-          <b>NOTE:</b>This is like a forun participants can share their openion
-          on a burning question shared by the sponsor.They can cost pictures
-          graphs, detailer arguments to support them.
-          <b>
-            No gurantee of payment. Participants will get paid based on their
-            contribution. Company will decide how much each contributor earns.
-          </b>
-        </p>
+        <h4>Friend who Enrolled</h4>
+        <h4>Terms & conditions</h4>
       </div>
     </div>
   );

@@ -1,131 +1,249 @@
-.maincontainer{
-    display: grid;
-    grid-template-columns: 50% 50%;
+body {
+  background-color: #e5e5e5;
 }
-.container1{
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(119, 161, 159);
+p {
+  font-family: "Poppins", sans-serif;
 }
-.container1>h1{
-    margin : 15px;
+h3 {
+  font-family: "Poppins", sans-serif;
 }
-.container1>img{
-    height: 40%;
-    width: 100%;
-    border-radius: 20px;
+h1 {
+  font-family: "Poppins", sans-serif;
 }
-.container1>p{
+.navbar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbarheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarheading > h3 {
+  padding-left: 10px;
+}
+.rightnavbar {
+  display: flex;
+}
+.rightnavbar > h3 {
+  padding-left: 15px;
+}
+.mainbody {
+  width: 75%;
+  margin: auto;
+}
+.mainbodyitem1 {
+  margin-top: 2vmax;
+  margin-bottom: 3vmax;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px;
+}
+
+.Earning {
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.earningitem1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.earningitem2 {
+  padding-right: 30px;
+}
+
+.referrelitem {
+  border: solid 2px rgba(202, 75, 75, 0.544);
+  width: 20vmax;
+  border-radius: 20px;
+}
+
+.referrelcode {
+  width: 30%;
+}
+
+.referrelcodeitem {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.referrelcodeitem > p {
+  padding: 5px;
+}
+
+.bottombody {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottonbodyitem {
+  padding: 8px;
+  width: 25vmax;
+  display: flex;
+  align-items: center;
+}
+
+.bottonbodyitemdata {
+  padding-left: 20px;
+}
+
+.bottonbodyitemsvg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 50px;
+  background-color: #f5f5f5;
+  border-radius: 70%;
+}
+
+.Earning > button {
+  text-decoration: none;
+  border: none;
+  /* width: 30%; */
+  height: 40px;
+  background-color: #800080;
+  color: white;
+  border-radius: 30px;
+}
+.Earning > button:hover {
+  cursor: pointer;
+}
+h3 {
+  color: #800080;
+}
+h2 {
+  color: #800080;
+}
+h4 {
+  color: #800080;
+}
+.referrelcodeitem > p {
+  color: #800080;
+}
+.earningitem2 > p {
+  color: #800080;
+}
+svg {
+  color: #b1346c;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .mainbody > p {
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.boldpara{
+  }
+  .referrelcode > h3 {
+    font-size: 25px;
+  }
+  .mainbodyitem1 {
+    flex-direction: column;
+    width: 80vmax;
+  }
+  .referrelcode {
+    padding-left: 0;
+  }
+  .referrelitem {
+    width: 70vmax;
+  }
+  .bottombody {
+    width: 80vmax;
+  }
+  .bottonbodyitem {
+    width: 70vmax;
+  }
+  .bottonbodyitemdata > p {
+    font-size: 20px;
+  }
+  .bottonbodyitemdata > h3 {
+    font-size: 25px;
+  }
+  .mainbody > h4 {
+    font-size: 25px;
+  }
+  .rightnavbar {
+    padding-left: 20px;
+  }
+  .rightnavbar > h3 {
+    display: none;
+  }
+  .Earning {
+    margin-right: 43px;
+  }
+  .profile {
+    margin-left: 13vmax;
+  }
+  .navbarheading {
+    font-size: 30px;
+  }
+  .navbarheading > svg {
+    font-size: 50px;
+  }
+  .profile {
+    font-size: 25px;
+  }
+  .profile > svg {
+    font-size: 40px;
+  }
+  .referrelcode {
+    width: 80%;
+  }
+  .referrelcodeitem > p {
+    font-size: 30px;
     font-weight: bold;
-}
- 
- 
+  }
+  .referrelcode > h3 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .bottonbodyitemdata > h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .bottonbodyitemdata > p {
+    font-size: 30px;
+    font-weight: 500;
+  }
 
-.container2{
-    background-color: rgba(113, 187, 160, 0.589);
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container2>h1{
-    color: red;
-}
-.container2> p{
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  .mainbody > h4 {
+    font-size: 30px;
+  }
+  .earningitem2 > p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .mainbody > p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .Earning > button {
+    font-size: 25px;
+    padding: 6px;
+    font-weight: bold;
+  }
+  .bottonbodyitemsvg {
+    height: 70px;
+    width: 90px;
+  }
+  .bottonbodyitemsvg>svg{
+    font-size: 50px;
+  }
 
-.up{
-    display: flex;
-     
-}
-.down{
-    display: flex;
-     
-}
-.labels1{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin-right: 15px;
-}
-
-.labels1>label{
-    padding: 10px;
-    color:  rgba(0, 0, 0, 0.8);
-    font-size: 16px;
-    font-family: sans-serif;
-}
-.up>.labels1>input{
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    width: 100%;
-    
-}
-.down>.labels1>input{
-    padding: 10px;
-    padding-bottom: 30px;
-    border-radius: 15px;
-    border: none;
-    width: 100%;
-    
-}
-
-.check{
-    width: 70%;
-    margin: 40px;
-    margin-bottom: 40px;
-}
-
-button{
-    margin-right: 20px;
-    padding: 11px;
-    padding-left: 28px;
-    padding-right: 28px;
-    font-weight: 700;
-    border: none;
-    border-radius: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: all 0.4s;
-}
-
-button:hover{
-    cursor: pointer;
-    color: rgb(211, 31, 31);
-    background-color: rgba(79, 117, 79, 0.685);
-}
-
-.socialmediabuttons{
-    display: flex;
-    margin: 10px;
-    margin-top: 20px;
-}
-.googlebutton{
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s;
-}
-.googlebutton:hover{
-    cursor: pointer;
-    color: white;
-}
-.linkedinbutton{
-    display: flex;
-     
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s;
-}
-.linkedinbutton:hover{
-    cursor: pointer;
-    color: white;
 }
